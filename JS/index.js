@@ -30,7 +30,7 @@ const agregarTarea = (tarea, id, realizado, eliminado) => {
             <p class="text" ${line}>
                 ${tarea}
             </p>
-            <i class"fas fa-trash" data="eliminado" id="${id}"></i>
+            <i class="fas fa-trash" data="eliminado" id="${id}"></i>
         </li>
     `
 
@@ -89,7 +89,7 @@ const cargarLista = tareas => {
     })
 }
 
-listaTareas.addEventListener('click', (event) => {
+lista.addEventListener('click', (event) => {
     const element = event.target
     const elementData = element.attributes.data.value
     if (elementData === 'realizado') {
